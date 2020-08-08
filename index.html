@@ -3,7 +3,7 @@
 <head>
 	<title>puzzels!</title>
 	
-		
+		<!-- qvvssuu -->
 
 	<style type="text/css">
 		html {
@@ -21,7 +21,25 @@
 			margin-bottom: 10px;
 			display: flex;
 			border: solid;
+			border-radius: 15px;
 			padding: 10px;
+		}
+		#nav {
+			display: flex;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			border: solid;
+		}
+		.nav_button {
+			flex: 1;
+			padding: 10px;
+			margin: 5px;
+			background-color: rgba(0,0,0,0.5); 
+		}
+		.nav_button:hover {
+			background-color: rgba(255,255,255,0.5); 
 		}
 	</style>
 </head>
@@ -37,6 +55,12 @@
 	<div class="puzzle" id="puzzle3">
 		<H3>knok knok</H3>
 
+	</div>
+	<div id="nav">
+		<div class="nav_button" id="button1">
+			<a class="open-in-bonza" href="bonzapuzzles://view?code=QVVSSUU">test</a>
+		</div>
+		<div class="nav_button" id="button2"></div>
 	</div>
 	<script  src="code.js"></script>
 </body>
