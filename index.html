@@ -49,29 +49,97 @@
 		.nav_button:hover {
 			background-color: rgba(255,255,255,0.5); 
 		}
+		.staff {
+			height: 58px;
+			display: flex;
+		}
+		.lines {
+			position: absolute;
+			width: 100%;
+		}
+		.bar {
+			z-index: 10;
+			flex: 1;
+			display: flex;
+			border-right: solid; 
+		}
+		.note {
+			height: 0px;
+			margin-top: -30px;
+			flex: 1;
+			font-size: 40px;
+		}
+		.rest {
+			margin-top: 0px
+		}
 	</style>
 </head>
 <body>
 	<div class="puzzle" id="puzzle1">
 		<H3>1 Which words?</H3>
 		<a class="open-in-bonza" href="bonzapuzzles://view?code=QVVSSU">puzzle 1</a>
-		<textarea  type="text" name="bands" id="bands"></textarea>
+		<textarea  type="text" name="bands" id="bands">madness elbow mcr muse eltonjohn davidbowie rollingstones realbigfish queen prince smashmouth blur</textarea>
 		<input type="button" name="submit" id="submitBands" value="submit">
 	</div>
 	<div class="puzzle hidden" id="puzzle2">
-		<H3>knok knok</H3>
-
+		<H3>2 Wrong note</H3>
+		<span style="position: relative; top: -86px; left: -20px;">X</span>
+		<div class="staff">
+			<div class="lines">
+				<hr/>
+				<hr/>
+				<hr/>
+				<hr/>
+				<hr/>
+			</div>
+			<div class="bar">
+				<span class="note" style="padding-top: 21px;">𝄞</span>
+				<span class="note rest">𝄼</span>
+				<span class="note rest">𝄽</span>
+				<span class="note rest">𝄾</span>
+				<span class="note" style="padding-top: 45px;">𝄰𝅘𝅥𝅮</span>
+			</div>
+			<div class="bar">
+				<span class="note" style="padding-top: 40px;">𝅘𝅥</span>
+				<span class="note rest">𝄾</span>
+				<span class="note" style="padding-top: 35px;">𝄰𝅘𝅥𝅮</span>
+				<span class="note" style="padding-top: 30px;">𝅘𝅥</span>
+				<span class="note rest">𝄾</span>
+				<span class="note" style="padding-top: 45px;">𝄰𝅘𝅥𝅮</span>
+				
+			</div>
+			<div class="bar">
+				<span class="note" style="padding-top: 40px;">𝅘𝅥𝅮</span>
+				<span class="note" style="padding-top: 35px;">𝄰𝅘𝅥𝅮</span>
+				<span class="note" style="padding-top: 30px;">𝅘𝅥𝅮</span>
+				<span class="note" style="padding-top: 15px;">𝅘𝅥𝅮</span>
+				<span class="note" style="padding-top: 20px;">𝅘𝅥𝅮</span>
+				<span class="note" style="padding-top: 45px;">𝅘𝅥𝅮</span>
+				<span class="note" style="padding-top: 30px;">𝅘𝅥𝅮</span>
+				<span class="note" style="padding-top: 20px;">𝅘𝅥𝅮</span>
+			</div>
+			<div class="bar">
+				<span class="note" style="padding-top: 25px;">𝄰𝅗𝅥</span>
+				<span class="note" style="padding-top: 25px;">𝄯𝅘𝅥𝅮</span>
+				<span class="note" style="padding-top: 30px;">𝅘𝅥𝅮</span>
+				<span class="note" style="padding-top: 40px;">𝅘𝅥𝅮</span>
+				<span class="note" style="padding-top: 45px;">𝅘𝅥𝅮</span>
+			</div>
+			<div class="bar">
+				<span class="note" style="padding-top: 40px;">𝅗𝅥</span>
+				<span class="note rest">𝄼</span>
+				<span class="note rest">𝄽</span>
+				<span class="note rest">𝄾</span>
+			</div>
+		</div>
 	</div>
-	<div class="puzzle hidden" id="puzzle3">
-		<H3>knok knok</H3>
-
-	</div>
-	<div id="nav">
+	
+	<!-- <div id="nav">
 		<div class="nav_button" id="button1">
 			
 		</div>
 		<div class="nav_button" id="button2"></div>
-	</div>
+	</div> -->
 	<script  src="code.js"></script>
 </body>
 </html>

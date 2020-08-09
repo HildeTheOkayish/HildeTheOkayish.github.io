@@ -24,7 +24,8 @@ bandsInput.onchange = () => {
 var puzzle2 = document.getElementById("puzzle2")
 
 bandsSubmit.onclick = () => {
-	var foundBands = bandsInput.value.split(/(\s|\n)/)
+	var foundBands = bandsInput.value.split(/(\s|\n)/).filter(e => e !== " ")
+	bandsSubmit.value = foundBands.length
 	let succes = true;
 	for (i in bands) {
 		if (!~foundBands.indexOf(bands[i])) {
